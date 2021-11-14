@@ -67,5 +67,42 @@ namespace Library_Management_System
             cbbSemester.Text = dgvStudent.SelectedRows[0].Cells[3].Value.ToString();
             stuPhone.Text = dgvStudent.SelectedRows[0].Cells[4].Value.ToString();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (stuID.Text == "")
+            {
+                MessageBox.Show("Enter the Student id");
+            }
+            else
+            {
+                Con.Open();
+                string query = "delete from StudentTbl where StdId = " + stuID.Text + ";";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Student Successfully Deleted");
+                Con.Close();
+                populate();
+            }
+        }
+
+        private void btnEditStu_Click(object sender, EventArgs e)
+        {
+            if (stuID.Text == "" || stuName.Text == "" || stuDep.Text == "" || stuPhone.Text == "" || cbbSemester.Text == "")
+            {
+                MessageBox.Show("Missing Informaiton");
+            }
+            else
+            {
+                Con.Open();
+                string query = "update StudentTbl set StdName='" + stuName.Text + "',StdDepartment='" + stuDep.Text + "',stdSem='" + cbbSemester.Text + "',stdPhone='"+stuPhone+"' where StdId=" + stuID.Text + ";";
+
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Edit Student Successfully");
+                Con.Close();
+                populate();
+            }
+        }
     }
 }
