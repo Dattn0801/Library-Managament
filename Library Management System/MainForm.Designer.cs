@@ -98,6 +98,7 @@ namespace Library_Management_System
             this.btnTips.TabIndex = 3;
             this.btnTips.Text = "Tips";
             this.btnTips.UseVisualStyleBackColor = true;
+            this.btnTips.Click += new System.EventHandler(this.btnTips_Click);
             // 
             // btnDashBoard
             // 

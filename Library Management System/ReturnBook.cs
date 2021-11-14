@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing.Printing;
+using System.Drawing;
 namespace Library_Management_System
 {
     public partial class ReturnBook : Form
@@ -119,9 +121,25 @@ namespace Library_Management_System
             }
         }
 
+        Bitmap bitmap;
         private void btn_print_Click(object sender, EventArgs e)
         {
+            Panel panel = new Panel();
+            this.Controls.Add(panel);
+            Graphics graphics = panel.CreateGraphics();
+            Size size = this.ClientSize;
+            bitmap = new Bitmap(Size.Width, size.Height, graphics);
+            graphics = Graphics.FromImage(bitmap);
+            Point point = PointToScreen(panel.Location);
+            graphics.CopyFromScreen(point.X, point.Y, 0, 0, size);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
 
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bitmap,0,0);
         }
     }
 }

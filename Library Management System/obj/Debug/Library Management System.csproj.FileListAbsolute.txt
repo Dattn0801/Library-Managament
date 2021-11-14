@@ -175,3 +175,4 @@ C:\Users\Dat\source\repos\Library-Managament\Library Management System\obj\Debug
 C:\Users\Dat\source\repos\Library-Managament\Library Management System\obj\Debug\Library Management System.csprojAssemblyReference.cache
 C:\Users\Dat\source\repos\Library-Managament\Library Management System\obj\Debug\Library_Management_System.AboutUs.resources
 C:\Users\Dat\source\repos\Library-Managament\Library Management System\obj\Debug\Library_Management_System.DashBoard.resources
+C:\Users\Dat\source\repos\Library-Managament\Library Management System\obj\Debug\Library_Management_System.Tips.resources

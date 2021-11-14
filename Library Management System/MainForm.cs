@@ -70,5 +70,11 @@ namespace Library_Management_System
             //this.Hide();
             aboutUs.Show();
         }
+
+        private void btnTips_Click(object sender, EventArgs e)
+        {
+            Tips tips = new Tips();
+            tips.Show();
+        }
     }
 }
