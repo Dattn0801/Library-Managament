@@ -51,7 +51,6 @@ namespace Library_Management_System
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEditLib = new System.Windows.Forms.Button();
             this.btnDeleteLib = new System.Windows.Forms.Button();
@@ -65,6 +64,7 @@ namespace Library_Management_System
             this.libID = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvLib = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLib)).BeginInit();
@@ -94,17 +94,6 @@ namespace Library_Management_System
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(562, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 55);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Librarians";
             // 
             // label1
             // 
@@ -570,6 +559,17 @@ namespace Library_Management_System
             this.dgvLib.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvLib.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLib_CellContentClick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(562, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(222, 55);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Librarians";
+            // 
             // Librarians
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -606,7 +606,6 @@ namespace Library_Management_System
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEditLib;
         private System.Windows.Forms.Button btnDeleteLib;
@@ -620,5 +619,6 @@ namespace Library_Management_System
         private Bunifu.UI.WinForms.BunifuTextBox libID;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2DataGridView dgvLib;
+        private System.Windows.Forms.Label label2;
     }
 }

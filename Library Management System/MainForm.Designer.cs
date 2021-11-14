@@ -127,6 +127,7 @@ namespace Library_Management_System
             this.btnAboutUs.TabIndex = 1;
             this.btnAboutUs.Text = "About us";
             this.btnAboutUs.UseVisualStyleBackColor = true;
+            this.btnAboutUs.Click += new System.EventHandler(this.btnAboutUs_Click);
             // 
             // panel3
             // 
@@ -183,6 +184,7 @@ namespace Library_Management_System
             this.btnReturnBook.TabIndex = 8;
             this.btnReturnBook.Text = "Return Books";
             this.btnReturnBook.UseVisualStyleBackColor = true;
+            this.btnReturnBook.Click += new System.EventHandler(this.btnReturnBook_Click);
             // 
             // btnIssueBook
             // 

@@ -96,7 +96,7 @@ namespace Library_Management_System
             else
             {
                 Con.Open();
-                string query = "update BookTbl set Author='" + tbAuthor.Text + "',Publisher='" + tbPublisher.Text + "',Price='" + tbPrice.Text + "', Qty='"+tbQuantity.Text+"'  where BookName= '" + tbBookName.Text + "';";
+                string query = "update BookTbl set Author='" + tbAuthor.Text + "',Publisher='" + tbPublisher.Text + "',Price='" + tbPrice.Text + "', Qty='" + tbQuantity.Text + "'  where BookName= '" + tbBookName.Text + "';";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Edit Book Successfully");

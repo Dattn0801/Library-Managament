@@ -24,7 +24,9 @@ namespace Library_Management_System
 
         private void btnDashBoard_Click(object sender, EventArgs e)
         {
-
+            DashBoard dashBoard = new DashBoard();
+            this.Hide();
+            dashBoard.Show();
         }
 
         private void btnStudent_Click(object sender, EventArgs e)
@@ -53,6 +55,20 @@ namespace Library_Management_System
             IssueBookForm issueBook = new IssueBookForm();
             this.Hide();
             issueBook.Show();
+        }
+
+        private void btnReturnBook_Click(object sender, EventArgs e)
+        {
+            ReturnBook returnBook = new ReturnBook();
+            this.Hide();
+            returnBook.Show();
+        }
+
+        private void btnAboutUs_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            //this.Hide();
+            aboutUs.Show();
         }
     }
 }
